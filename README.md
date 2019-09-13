@@ -1,6 +1,6 @@
 # GIS Workshop for ARCH 4509/6509
 
-Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, fall 2019.
+Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, fall 2019.  
 https://kgjenkins.github.io/arch4509-fa2019/
 
 In this workshop, we will learn how use QGIS to:
@@ -13,7 +13,7 @@ In this workshop, we will learn how use QGIS to:
 
 ## Data sources
 
-NYC Open Data provides public access to a wealth of data for New York City.
+NYC Open Data provides public access to a wealth of data for New York City.  Similar websites exist for many (but not all!) other cities, states, and countries.
 
 **Building Footprints**
   * polygon shapefile downloaded from [https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh](https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh)
@@ -218,3 +218,12 @@ Any data you find in OSM can be downloaded and used in QGIS.
 
 * [Geofabrik](http://download.geofabrik.de/) offers shapefile extracts by country that are updated daily.
 
+Due to the complex nature of OSM tagging, the attribute columns available in an extract may vary across each of these providers.
+
+If there is time at the end of this workshop, try exploring the following data for Dhaka, Bangladesh that was extracted via the HOT Export Tool:
+
+* https://export.hotosm.org/downloads/ae820b92-fde7-4820-8421-079794917d29/dhaka-water_export_gpkg.zip
+* https://export.hotosm.org/downloads/dde9da0b-9194-4979-b2ce-36cb2121a549/dhaka-transportation_export_gpkg.zip
+* https://export.hotosm.org/downloads/b38ff5d9-ea03-483f-81fb-f2a3fe716c9e/dhaka-buildings_export_gpkg.zip
+
+Try using graduated colors for the buildings, but instead of selecting a column, type `$area` which is a built-in expression for the area of the polygon.  By applying a spectrum color ramp, it will be easier to spot the locations of slums that are made up of many tightly-packed small structures.
