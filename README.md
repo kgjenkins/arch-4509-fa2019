@@ -1,7 +1,7 @@
 # GIS Workshop for ARCH 4509/6509
 
 Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, fall 2019.  
-https://kgjenkins.github.io/arch4509-fa2019/
+<https://kgjenkins.github.io/arch4509-fa2019/>
 
 In this workshop, we will learn how use QGIS to:
 * Import vector data (points, lines, polygons) from different file formats (shapefile, geopackage)
