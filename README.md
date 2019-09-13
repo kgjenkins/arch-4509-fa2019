@@ -200,12 +200,9 @@ To get a sense of what is on the map, explore the map at [openstreetmap.org](htt
 Once you have zoomed in to a local area, you can use the "query features" tool to click the map to see the details for specific features.  OSM uses a tagging system to describe details.  For example, Mann Library currently includes these tags (among others):
 
 ```
-amenity = library
-building = yes
-building:levels = 4
-ele = 275
-name = Mann Library
-website = https://mannlib.cornell.edu/
+amenity = library          building:levels = 4
+building = yes             ele = 275
+name = Mann Library        website = https://mannlib.cornell.edu/
 ```
 
 The tagging system is [complex](https://wiki.openstreetmap.org/wiki/Map_Features#Building), but powerful, allowing 3rd-party tools to query the openly-licensed data to extract specific types of data.  For example, [this query in Overpass Turbo](https://overpass-turbo.eu/s/MgI) shows the results for drinking water sources in a very-well-mapped slum in Nairobi.
@@ -225,3 +222,5 @@ If there is time at the end of this workshop, try exploring the following data f
 * <https://export.hotosm.org/downloads/b38ff5d9-ea03-483f-81fb-f2a3fe716c9e/dhaka-buildings_export_gpkg.zip>
 
 Try using graduated colors for the buildings, but instead of selecting a column, type `$area` which is a built-in expression for the area of the polygon.  By applying a spectrum color ramp, it will suddenly becoming easier to spot the locations of slums that are made up of many tightly-packed small structures, for example.  Creative tinkering can lead to other interesting views of the data!
+
+For a guide to other GIS Data Sources, see <https://github.com/kgjenkins/gis-data-sources>
