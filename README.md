@@ -82,7 +82,7 @@ There are two basic ways to explore the data that is associated with each polygo
 Notice that only some of the buildings have names in the data.  Other fields of interest include `CNSTRCT_YR` (year of construction), `HEIGHTROOF` (roof height above ground, in feet), and `GROUNDELEV` (ground elevation, in feet).  We can use the values of these fields to control the colors on the map.
 
 
-**8. Graduated colors**
+**6. Graduated colors**
 
 Whenever we have a field (or "column") that contains numbers, we can make our map use those values to set the color of the corresponding polygon.
 
@@ -98,7 +98,7 @@ Change the mode to "Quantile" and observe the difference.  Also try "Natural Bre
 You can change the number of classes (default is 5), and you can also change the color ramp -- click it to edit the colors.  There are many other ways to customize map styles in QGIS, such as blending modes and draw effects (in the Layer Rendering section) -- the possibilities are endless!
 
 
-**9. Add a Basemap**
+**7. Add a Basemap**
 
 Sometimes it is useful to load a global base layer from the web, to add context to your map, or just to help confirmthat your data is correctly aligned.  The QuickMapServices plugin makes this easy.  (It's already installed on the Mann Library computers.)
 
@@ -107,7 +107,7 @@ Sometimes it is useful to load a global base layer from the web, to add context 
 If the labels on the basemap are pixelated (caused by the reprojection the basemap image), right-click the basemap layer > Set CRS > Set Project CRS from Layer.  (CRS means Coordinate Reference System.)
 
 
-**10. Creating a Print Layout**
+**8. Creating a Print Layout**
 
 Now it's time to decide how our map will appear on a page, or in an exported image.  We can create a print layout that specifies the extent of the map we want to show (just Lower Manhattan, for example).  With a print layout, we can also add a title, a legend, a scale bar, and other elements to the page.
 
@@ -126,7 +126,7 @@ By default, the map will be centered and scaled just as it appeared in the main 
 Now you can pan the map content, or zoom with the mouse wheel.  To zoom with finer control, hold the CTRL key while zooming.
 
 
-**11. Add a title**
+**9. Add a title**
 
 * Add Item > Add Label
 * Drag a box where you want the title to appear.
@@ -134,7 +134,7 @@ Now you can pan the map content, or zoom with the mouse wheel.  To zoom with fin
 * Font options are found in the "Appearance" section below the text
 
 
-**12. Add a Legend**
+**10. Add a Legend**
 
 * Add Item > Add Legend
 * Drag a box where you want the legend to appear.
@@ -147,7 +147,7 @@ The default legend is a bit ugly, as it uses the original layer names, and also 
 * Fonts can be adjusted in the "Fonts" section of the Item Properties.
 
 
-**13. Add a Scale Bar**
+**11. Add a Scale Bar**
 
 * Add Item > Add Scale Bar
 * Drag a box where you want the scale bar to appear.
@@ -155,7 +155,7 @@ The default legend is a bit ugly, as it uses the original layer names, and also 
 * Experiment with the Segments settings
 
 
-**14. Add a North Arrow**
+**12. Add a North Arrow**
 
 Adding a north arrow is recommended whenever north is not towards the top of the page.
 
@@ -164,7 +164,7 @@ Adding a north arrow is recommended whenever north is not towards the top of the
 * To change the color of the arrow, see the item properties.
 
 
-**15. Export the map**
+**13. Export the map**
 
 * Layout menu > Export as image (or PDF)
 
