@@ -220,8 +220,8 @@ Any data you find in OSM can be downloaded and used in QGIS.  Here are some of t
 
 If there is time at the end of this workshop, try exploring the following data for Dhaka, Bangladesh that was extracted via the HOT Export Tool:
 
-* https://export.hotosm.org/downloads/ae820b92-fde7-4820-8421-079794917d29/dhaka-water_export_gpkg.zip
-* https://export.hotosm.org/downloads/dde9da0b-9194-4979-b2ce-36cb2121a549/dhaka-transportation_export_gpkg.zip
-* https://export.hotosm.org/downloads/b38ff5d9-ea03-483f-81fb-f2a3fe716c9e/dhaka-buildings_export_gpkg.zip
+* <https://export.hotosm.org/downloads/ae820b92-fde7-4820-8421-079794917d29/dhaka-water_export_gpkg.zip>
+* <https://export.hotosm.org/downloads/dde9da0b-9194-4979-b2ce-36cb2121a549/dhaka-transportation_export_gpkg.zip>
+* <https://export.hotosm.org/downloads/b38ff5d9-ea03-483f-81fb-f2a3fe716c9e/dhaka-buildings_export_gpkg.zip>
 
 Try using graduated colors for the buildings, but instead of selecting a column, type `$area` which is a built-in expression for the area of the polygon.  By applying a spectrum color ramp, it will suddenly becoming easier to spot the locations of slums that are made up of many tightly-packed small structures, for example.  Creative tinkering can lead to other interesting views of the data!
