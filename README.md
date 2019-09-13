@@ -193,9 +193,9 @@ The trees data also has interesting information like overall tree health (`healt
 
 ## Using data from OpenStreetMap
 
-Many cities in the United States have open data websites where you can find all sorts of geospatial data for making maps.  However, that is not the case for many cities in other countries (or even some cities in the US) that either don't have the technological infrastructure for collecting and distributing such data, or lack policies promoting free and open access to data.
+Many cities in the United States (like New York City) have open data websites where you can find all sorts of geospatial data for making maps.  However, that is not the case for many cities in other countries (or even some cities in the US) that either don't have the technological infrastructure for collecting and distributing such data, or lack policies promoting free and open access to data.
 
-This data gap can often be filled by OpenStreetMap, a collaborative map of the world that anyone can edit.  OpenStreetMap (OSM) was founded in the UK in 2004, and now has mappers all over the world who trace satellite and aerial imagery to create the basic shapes of roads and buildings.  Details such as road names, business names, addresses, and much more are added by locals with more intimate knowledge of the places being mapped.  OSM is widely regarded as the most complete, accurate, and up-to-date map of the world, at least when it comes to roads.  Many cities (and countrysides) also have building outlines, and where those exist, the data is high quality.  But be aware that not all areas of the world (including cities in the US) have not been completely mapped when it comes to buildings or more specialized features like businesses, drinking water sources, or fire hydrants.
+This data gap can often be filled by OpenStreetMap, a collaborative map of the world that anyone can edit.  OpenStreetMap (OSM) was founded in the UK in 2004, and now has mappers all over the world who trace satellite and aerial imagery to create the basic shapes of roads and buildings.  Details such as road names, business names, addresses, and much more are added by locals with more intimate knowledge of the places being mapped.  OSM is widely regarded as the most complete, accurate, and up-to-date map of the world, at least when it comes to roads.  Many cities (and countrysides) also have building outlines, and where those exist, the data is high quality.  But be aware that not all areas of the world (including some cities in the US) have not been completely mapped when it comes to buildings or more specialized features like businesses, drinking water sources, or fire hydrants.
 
 To get a sense of what is on the map, explore the map at [openstreetmap.org](https://www.openstreetmap.org/)
 
@@ -210,7 +210,7 @@ Once you have zoomed in to a local area, you can use the "query features" tool t
 
 The tagging system is [complex](https://wiki.openstreetmap.org/wiki/Map_Features#Building), but powerful, allowing 3rd-party tools to query the openly-licensed data to extract specific types of data.  For example, [this query in Overpass Turbo](https://overpass-turbo.eu/s/MgI) shows the results for drinking water sources in a very-well-mapped slum in Nairobi.
 
-Any data you find in OSM can be downloaded and used in QGIS.
+Any data you find in OSM can be downloaded and used in QGIS.  Here are some of the most popular sites for getting OSM data in GIS formats:
 
 * [Overpass Turbo](https://overpass-turbo.eu) has a wizard that helps you build a search for specific words or tags, and thene export the results as a GeoJSON file that can be easily added to QGIS.  Overpass Turbo is best for relatively small queries that might only return 1000 results or less.
 
@@ -218,12 +218,10 @@ Any data you find in OSM can be downloaded and used in QGIS.
 
 * [Geofabrik](http://download.geofabrik.de/) offers shapefile extracts by country that are updated daily.
 
-Due to the complex nature of OSM tagging, the attribute columns available in an extract may vary across each of these providers.
-
 If there is time at the end of this workshop, try exploring the following data for Dhaka, Bangladesh that was extracted via the HOT Export Tool:
 
 * https://export.hotosm.org/downloads/ae820b92-fde7-4820-8421-079794917d29/dhaka-water_export_gpkg.zip
 * https://export.hotosm.org/downloads/dde9da0b-9194-4979-b2ce-36cb2121a549/dhaka-transportation_export_gpkg.zip
 * https://export.hotosm.org/downloads/b38ff5d9-ea03-483f-81fb-f2a3fe716c9e/dhaka-buildings_export_gpkg.zip
 
-Try using graduated colors for the buildings, but instead of selecting a column, type `$area` which is a built-in expression for the area of the polygon.  By applying a spectrum color ramp, it will be easier to spot the locations of slums that are made up of many tightly-packed small structures.
+Try using graduated colors for the buildings, but instead of selecting a column, type `$area` which is a built-in expression for the area of the polygon.  By applying a spectrum color ramp, it will suddenly becoming easier to spot the locations of slums that are made up of many tightly-packed small structures, for example.  Creative tinkering can lead to other interesting views of the data!
