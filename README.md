@@ -223,4 +223,4 @@ If there is time at the end of this workshop, try exploring the following data f
 
 Try using graduated colors for the buildings, but instead of selecting a column, type `$area` which is a built-in expression for the area of the polygon.  By applying a spectrum color ramp, it will suddenly becoming easier to spot the locations of slums that are made up of many tightly-packed small structures, for example.  Creative tinkering can lead to other interesting views of the data!
 
-For a guide to other GIS Data Sources, see <https://github.com/kgjenkins/gis-data-sources>
+For a guide to other GIS Data Sources, see <https://kgjenkins.github.io/gis-data-sources/>
