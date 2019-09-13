@@ -69,7 +69,6 @@ The buildings layer only contains data, and lacks any sense of style.  QGIS simp
 * To change the color, click the color bar to choose a new color.  There are many ways to select a color!  (I prefer the triangle within the circle.)
 * When you are done selecting a color, click the back arrow near the top of the the Layer Styling dock.
 * Clicking the "Simple fill" part of the style will let you adjust other things, such as the stroke (border) color and width.
-* Experiment a bit, but be sure to end up with a black stroke, 0.26mm wide.
 
 
 **5. Explore the building attribute data**
@@ -151,8 +150,7 @@ The default legend is a bit ugly, as it uses the original layer names, and also 
 
 * Add Item > Add Scale Bar
 * Drag a box where you want the scale bar to appear.
-* Set scalebar units as desired
-* Experiment with the Segments settings
+* Set scalebar units as desired, and experiment with the Segments settings
 
 
 **12. Add a North Arrow**
