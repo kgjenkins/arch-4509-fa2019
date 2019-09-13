@@ -201,12 +201,14 @@ To get a sense of what is on the map, explore the map at [openstreetmap.org](htt
 
 Once you have zoomed in to a local area, you can use the "query features" tool to click the map to see the details for specific features.  OSM uses a tagging system to describe details.  For example, Mann Library currently includes these tags (among others):
 
-* amenity = library
-* building = yes
-* building:levels = 4
-* ele = 275
-* name = Mann Library
-* website = https://mannlib.cornell.edu/
+```
+amenity = library
+building = yes
+building:levels = 4
+ele = 275
+name = Mann Library
+website = https://mannlib.cornell.edu/
+```
 
 The tagging system is [complex](https://wiki.openstreetmap.org/wiki/Map_Features#Building), but powerful, allowing 3rd-party tools to query the openly-licensed data to extract specific types of data.  For example, [this query in Overpass Turbo](https://overpass-turbo.eu/s/MgI) shows the results for drinking water sources in a very-well-mapped slum in Nairobi.
 
